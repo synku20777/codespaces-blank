@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemonade Stand: Embrace the Unexpected!</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #game-container { width: 80%; margin: 0 auto; padding: 20px; }
+        #actions, #results { margin-top: 20px; }
+        button { padding: 10px 20px; margin: 5px; }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <h1>Lemonade Stand: Embrace the Unexpected!</h1>
+    <p>Day: <span id="day">1</span></p>
+    <p>Money: $<span id="money">50.00</span></p>
+    <p>Supplies: Lemons: <span id="lemons">10</span>, Sugar: <span id="sugar">10</span>, Cups: <span id="cups">10</span></p>
+    <p>Price per cup: $<span id="price">1.00</span></p>
+
+    <div id="actions">
+        <button onclick="buySupplies()">Buy Supplies</button>
+        <button onclick="setPrice()">Set Price</button>
+        <button onclick="startSelling()">Start Selling</button>
+    </div>
+
+    <div id="results">
+        <p id="event-log"></p>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
